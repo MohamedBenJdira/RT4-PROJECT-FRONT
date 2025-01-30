@@ -1,3 +1,33 @@
 .pointer {
     cursor: pointer;
 }
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Ensures space between logo and other navbar items */
+    align-items: center; /* Vertically center the items in the navbar */
+    
+    .navbar-translate {
+      display: flex;
+      align-items: center;
+    }
+  
+    .navbar-collapse {
+      display: flex;
+      justify-content: flex-end; /* Align navbar items to the right */
+      width: auto;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    .nav-item {
+      margin-left: 20px; /* Adds space between the navbar items */
+    }
+  }
+  

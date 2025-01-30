@@ -1,28 +1,30 @@
-<div
-  class="page-header"
-  data-parallax="true"
-  style="background-image: url('./assets/img/bruno-abatti.jpg')"
->
+<div class="page-header position-relative" data-parallax="true">
+  <ng-container *ngFor="let image of backgroundImages; let i = index">
+      <div class="background-slide" 
+           [style.background-image]="'url(' + image + ')'"
+           [style.opacity]="i === currentImageIndex ? 1 : 0">
+      </div>
+  </ng-container>
   <div class="filter"></div>
   <div class="container">
-    <div class="motto text-center">
-      <h1>Welcome To <span class="text-primary">Watch Near</span></h1>
-      <h3>Your place to plan what movie to watch and where</h3>
-      <br />
-    </div>
+      <div class="motto text-center">
+          <h1>Welcome To <span style="color: rgb(219, 180, 158);">CineGlobe</span></h1>
+        <h3>Your place to plan what movie to watch and where</h3>
+          <br />
+      </div>
   </div>
 </div>
 <div class="main">
   <div class="section text-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 mr-auto ml-auto">
+        <div class="mr-auto ml-auto text-center">
           <h2 class="title">What do we offer you</h2>
           <h5 class="description">
             Hello. It's your free time and you are looking for a way to have a
             good time. A movie sounds like a good idea right? The problem is you
             might be thinking what movie to watch or where to watch it. In comes
-            <span class="text-primary">Watch Near</span>, the best place that
+            <span style="color: rgb(219, 180, 158); font-weight: bold;">CineGlobe</span>, the best place that
             guides you to the best option.
           </h5>
           <br />
@@ -80,28 +82,16 @@
     <div class="container">
       <h2 class="title">Let's talk about us</h2>
       <div class="row justify-content-center">
-        <div class="col-md-4">
-          <div class="card card-profile card-plain">
-            <div class="card-avatar">
-              <img
-                src="./assets/img/profile-placeholder.png"
-                alt="Profile Picture"
-              />
-            </div>
-            <div class="card-block">
-              <div class="author">
-                <h4 class="card-title">John Doe</h4>
-              </div>
-              <p class="card-description text-center">
-                "Passionate about movies and making them accessible to
-                everyone."
-                <br />
-                johndoe&#64;example.com
-              </p>
-            </div>
-          </div>
+        <div class="col-md-8">
+          <p class="description">
+            We are a team of six movie lovers who created <strong>CineGlobe</strong> to make finding movies and cinemas effortless.
+          </p>
+          <p class="description">
+            Our mission is simple: help you discover, plan, and enjoy the best cinema experience.
+          </p>
+          <p class="description">
+            Explore with us and make every movie night special! 🎬✨
         </div>
-      </div>
     </div>
   </div>
 </div>

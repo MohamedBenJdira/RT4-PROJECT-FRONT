@@ -1,15 +1,39 @@
-footer{
-    background-color: black;
-    margin-top: 100px;
+footer {
+    background-color: #121212;
+    color: #ffffff;
 }
 
-.copyrights{
-    background-color: rgba(0, 0, 0, 0.2);
-    font-size: 1.2em;
-    font-style: bold;
+.copyrights {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1.3em; // Increased font size for better readability
+    font-weight: bold;
+    color: #d3d3d3;
+    padding: 10px 0; // More presence without extra height
 }
 
-.contact-us{
-    background-color: #e1e3e1;
-
+.contact-us {
+    background-color: transparent;
 }
+
+// Social media icon spacing and size adjustments
+
+footer a.btn {
+    border-radius: 50%;
+    font-size: 1.4em; // Slightly bigger icons
+    margin: 10px 15px; // Increased horizontal spacing
+    padding: 8px; // Maintain padding for good click area
+    transition: all 0.3s ease-in-out;
+}
+
+// Hover effect to make it interactive without increasing size too much
+footer a.btn:hover {
+    transform: scale(1.2);
+}
+
+// Social media hover colors for better contrast
+footer a[href*="facebook"]:hover { color: #1877F2; }
+footer a[href*="twitter"]:hover { color: #1DA1F2; }
+footer a[href*="google"]:hover { color: #DB4437; }
+footer a[href*="instagram"]:hover { color: #E1306C; }
+footer a[href*="linkedin"]:hover { color: #0077B5; }
+footer a[href*="github"]:hover { color: #F5F5F5; }
