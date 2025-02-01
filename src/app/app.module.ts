@@ -11,6 +11,9 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ErrorMessageComponent } from './pages/auth/error-message/error-message.component';
+import { AccountPageComponent } from './pages/account/account-page.component';
+import { TopSectionComponent } from './pages/account/top-section/top-section.component';
+import { MainSectionProfileComponent } from './pages/account/main-section-profile/main-section-profile.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { ErrorMessageComponent } from './pages/auth/error-message/error-message.
     LandingComponent,
     RegistrationPageComponent,
     ErrorMessageComponent,
+    AccountPageComponent,
+    TopSectionComponent,
+    MainSectionProfileComponent,
   ],
   imports: [
     BrowserModule,
