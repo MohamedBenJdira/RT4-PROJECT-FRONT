@@ -1,0 +1,9 @@
+.bg-image {
+  background-image : url("assets/img/login/login-background.jpg");
+}
+
+.container {
+  margin-top: 5%;
+  position: relative;
+  z-index: 3;
+}

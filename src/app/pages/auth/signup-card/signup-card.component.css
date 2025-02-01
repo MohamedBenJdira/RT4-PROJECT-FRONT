@@ -1,0 +1,8 @@
+input.ng-invalid.ng-touched{
+    border : red solid 1px;
+}
+
+
+.centered-text {
+  text-align: center;
+}
