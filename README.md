@@ -1,27 +1,88 @@
-# RT4PROJECTFRONT
+# RT4-PROJECT-FRONT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+## 🎬 Angular Movies Project
 
-## Development server
+Welcome to **RT4-PROJECT-FRONT**, an Angular-based movie project designed to provide an engaging user experience for browsing and discovering movies.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 Features
+- Browse popular movies
+- Search for movies
+- View detailed information on each movie
 
-## Code scaffolding
+## 🚀 Tech Stack
+- **Angular**: Version 16
+- **TypeScript**: Strongly typed JavaScript
+- **RxJS**: Reactive programming with observables
+- **SCSS**: Styling with modular support
+- **Angular Router**: For navigation and routing
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🔗 Backend API
+The project relies on a backend service for fetching movie data. You can access the backend repository here:
+[RT4-PROJECT-BACKEND](<insert-backend-repo-link>)
 
-## Build
+## 🛠️ Installation & Setup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (Latest LTS recommended)
+- Angular CLI
 
-## Running unit tests
+### Steps to Run Locally
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/RT4-PROJECT-FRONT.git
+   cd RT4-PROJECT-FRONT
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the development server:
+   ```sh
+   ng serve
+   ```
+   The app will be available at `http://localhost:4200/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📂 Project Structure
+```
+RT4-PROJECT-FRONT/
+│── src/
+│   ├── app/
+│   │   ├── dto/               # Data transfer objects
+│   │   ├── guards/            # Route guards for authentication
+│   │   ├── interceptors/      # HTTP interceptors
+│   │   ├── models/            # TypeScript models
+│   │   ├── not-found/         # 404 Not Found page
+│   │   ├── pages/             # Feature-specific pages
+│   │   ├── services/          # API and state management
+│   │   ├── shared/            # Shared components and modules
+│   │   ├── utilities/         # Utility functions and helpers
+│   │   ├── app-routing.module.ts  # Application routing
+│   │   ├── app.component.css  # Component styles
+│   │   ├── app.component.html # Main HTML template
+│   │   ├── app.component.ts   # Root component logic
+│   │   ├── app.module.ts      # Main application module
+│   ├── assets/                # Static assets (images, icons)
+│   │   ├── constants.ts       # Application-wide constants
+│   ├── favicon.ico            # Favicon
+│   ├── index.html             # Main HTML file
+│   ├── main.ts                # Entry point of the app
+│   ├── styles.css             # Global styles
+│── .editorconfig              # Code formatting settings
+│── angular.json               # Angular configuration
+│── package.json               # Dependencies and scripts
+│── README.md                  # Project documentation
+```
 
-## Running end-to-end tests
+## ✅ Deployment
+To build the project for production, run:
+```sh
+ng build --configuration=production
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🤝 Contributing
+1. Fork the repository
+2. Create a new feature branch: `git checkout -b feature-branch`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature-branch`
+5. Open a Pull Request
